@@ -1,0 +1,650 @@
+[debug] [2023-02-18T17:58:54.943Z] : 
+[debug] [2023-02-18T17:58:54.945Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T17:58:54.945Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js serve
+[debug] [2023-02-18T17:58:54.946Z] : CLI Version:  1.13.3
+[debug] [2023-02-18T17:58:54.946Z] : Platform:     win32
+[debug] [2023-02-18T17:58:54.947Z] : Node Version: v18.12.1
+[debug] [2023-02-18T17:58:54.948Z] : Time:         Sun Feb 19 2023 01:58:54 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-18T17:58:54.948Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T17:58:54.948Z] : 
+[debug] [2023-02-18T17:58:55.641Z] : > authorizing via signed-in user option
+[debug] [2023-02-18T17:58:55.641Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.functions.EXECUTE","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-18T17:58:55.653Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093043 
+
+[debug] [2023-02-18T17:58:56.265Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 17:58:56 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=f86ced8e-3879-4f16-9f18-324d688e65f6;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=f86ced8e-3879-4f16-9f18-324d688e65f6;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T17:58:56.268Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093043/environment 
+
+[debug] [2023-02-18T17:58:56.811Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 17:58:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=28b75fb4-42af-446c-8a85-ef0e0c174de8;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=28b75fb4-42af-446c-8a85-ef0e0c174de8;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T17:58:56.996Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093043/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-18T17:58:57.551Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 17:58:57 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=bbdfb771565421abbe10f7a180903d28; Path=/","ZD_CSRF_TOKEN=10cbe8b8-38c7-470b-8a38-92f3e23a9958;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=10cbe8b8-38c7-470b-8a38-92f3e23a9958;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T17:58:57.554Z] : unknown eol undefined hence skipping check
+[info] [2023-02-18T17:58:57.601Z] : i server[tours_function]: URL : http://localhost:3000/server/tours_function/
+[info] [2023-02-18T17:58:57.601Z] : 
+[info] [2023-02-18T17:59:00.379Z] : [react-plugin]: Starting the development server...
+
+[info] [2023-02-18T17:59:00.381Z] : i client[react-app]: Plugin : "zcatalyst-cli-plugin-react" is used for client serve
+[info] [2023-02-18T17:59:06.227Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T17:59:06.228Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:17:  'useState' is defined but never used      no-unused-vars
+  Line 1:27:  'useEffect' is defined but never used     no-unused-vars
+  Line 2:8:   'Loading' is defined but never used       no-unused-vars
+  Line 3:8:   'Tours' is defined but never used         no-unused-vars
+  Line 6:7:   'url' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T17:59:06.228Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T17:59:06.229Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:26:06.961Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:26:07.284Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:26:07.284Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:17:  'useState' is defined but never used      no-unused-vars
+  Line 1:27:  'useEffect' is defined but never used     no-unused-vars
+  Line 2:8:   'Loading' is defined but never used       no-unused-vars
+  Line 3:8:   'Tours' is defined but never used         no-unused-vars
+  Line 6:7:   'url' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:26:07.285Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:26:07.285Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:27:13.470Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:27:13.729Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-02-18T18:27:13.729Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 7:31:  React Hook "useState" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function  react-hooks/rules-of-hooks
+  Line 8:27:  React Hook "useState" cannot be called at the top level. React Hooks must be called in a React function component or a custom React Hook function  react-hooks/rules-of-hooks
+
+Search for the keywords to learn more about each error.
+[info] [2023-02-18T18:28:41.771Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:28:41.971Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:28:41.972Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 2:8:    'Loading' is defined but never used              no-unused-vars
+  Line 3:8:    'Tours' is defined but never used                no-unused-vars
+  Line 6:7:    'url' is assigned a value but never used         no-unused-vars
+  Line 9:10:   'loading' is assigned a value but never used     no-unused-vars
+  Line 9:19:   'setLoading' is assigned a value but never used  no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:28:41.972Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:28:41.973Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:29:23.721Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:29:23.895Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:29:23.895Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 3:8:    'Tours' is defined but never used                no-unused-vars
+  Line 6:7:    'url' is assigned a value but never used         no-unused-vars
+  Line 9:19:   'setLoading' is assigned a value but never used  no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:29:23.896Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:29:23.896Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:30:31.422Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:30:31.647Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:30:31.648Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 6:7:    'url' is assigned a value but never used         no-unused-vars
+  Line 9:19:   'setLoading' is assigned a value but never used  no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:30:31.648Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:30:31.648Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:30:38.549Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:30:38.724Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:30:38.724Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 6:7:    'url' is assigned a value but never used         no-unused-vars
+  Line 9:19:   'setLoading' is assigned a value but never used  no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:30:38.724Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:30:38.725Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:30:43.910Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:30:44.053Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:30:44.053Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 6:7:    'url' is assigned a value but never used         no-unused-vars
+  Line 9:19:   'setLoading' is assigned a value but never used  no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:30:44.054Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:30:44.054Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:31:24.757Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:31:24.932Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:31:24.933Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 6:7:    'url' is assigned a value but never used         no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+  Line 12:9:   'fetchTours' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:31:24.933Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:31:24.933Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:32:07.677Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:32:07.846Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:32:07.846Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+  Line 12:9:   'fetchTours' is assigned a value but never used  no-unused-vars
+  Line 14:11:  'response' is assigned a value but never used    no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:32:07.847Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:32:07.847Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[debug] [2023-02-18T18:32:07.875Z] : > refreshing access token <
+[debug] [2023-02-18T18:32:07.878Z] : >>>> HTTP REQUEST : POST https://accounts.zoho.com/oauth/v2/token 
+<request body omitted>
+
+[debug] [2023-02-18T18:32:08.501Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 18:32:08 GMT","content-type":"application/json;charset=UTF-8","content-length":"2728","connection":"close","set-cookie":["b266a5bf57=a711b6da0e6cbadb5e254290f114a026; Path=/","iamcsr=2f252f53-21ee-4ade-9c4a-3da5b66af45f;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=2f252f53-21ee-4ade-9c4a-3da5b66af45f;path=/;SameSite=Strict;Secure;priority=high"],"cache-control":"no-store","x-content-type-options":"nosniff","pragma":"no-cache","x-xss-protection":"1","x-frame-options":"SAMEORIGIN","vary":"accept-encoding","content-language":"en-US","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T18:32:44.961Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:32:45.154Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:32:45.155Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 1:27:   'useEffect' is defined but never used            no-unused-vars
+  Line 10:10:  'tours' is assigned a value but never used       no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used    no-unused-vars
+  Line 12:9:   'fetchTours' is assigned a value but never used  no-unused-vars
+  Line 14:11:  'response' is assigned a value but never used    no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:32:45.156Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:32:45.157Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:33:37.715Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:33:37.901Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:33:37.902Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 10:10:  'tours' is assigned a value but never used     no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used  no-unused-vars
+  Line 14:11:  'response' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:33:37.902Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:33:37.903Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:33:43.916Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:33:44.011Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:33:44.012Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 10:10:  'tours' is assigned a value but never used     no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used  no-unused-vars
+  Line 14:11:  'response' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:33:44.012Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:33:44.012Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:34:05.930Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:34:06.110Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:34:06.110Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 10:10:  'tours' is assigned a value but never used     no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:34:06.110Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:34:06.111Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:34:32.578Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:34:32.738Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:34:32.739Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 10:10:  'tours' is assigned a value but never used     no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:34:32.739Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:34:32.740Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:34:53.384Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:34:53.560Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:34:53.561Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 10:10:  'tours' is assigned a value but never used     no-unused-vars
+  Line 10:17:  'setTours' is assigned a value but never used  no-unused-vars
+  Line 15:11:  'tours' is assigned a value but never used     no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:34:53.563Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:34:53.563Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:35:10.407Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:35:10.541Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-02-18T18:35:10.542Z] : [react-plugin]: SyntaxError: C:\Users\USER\Desktop\React Udemy Class\CATALYST\Tours\react-app\src\App.js: Missing catch or finally clause. (14:4)
+  12 |   const fetchTours = async () => {
+  13 |     setLoading(true);
+> 14 |     try{
+     |     ^
+  15 | const response = await fetch(url);
+  16 |     const tours = await response.json();
+  17 |     }
+[info] [2023-02-18T18:36:11.143Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:36:11.369Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:36:11.369Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 10:10:  'tours' is assigned a value but never used  no-unused-vars
+
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:36:11.369Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:36:11.370Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:37:22.500Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:37:22.729Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:37:22.730Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+
+src\Tours.js
+  Line 2:8:  'Tour' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:37:22.730Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:37:22.730Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:40:23.482Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:40:23.699Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:40:23.700Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:40:23.700Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:40:23.700Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:42:22.805Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:42:23.054Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:42:23.054Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:42:23.054Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:42:23.054Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:44:25.239Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:44:25.433Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:44:25.433Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:44:25.433Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:44:25.433Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:45:04.263Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:45:04.431Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:45:04.431Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:45:04.431Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:45:04.432Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:45:40.823Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:45:40.989Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:45:40.989Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 1:17:  'useState' is defined but never used  no-unused-vars
+[info] [2023-02-18T18:45:40.989Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:45:40.989Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:47:13.563Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:47:13.789Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:47:13.789Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 4:10:  'readMore' is assigned a value but never used     no-unused-vars
+  Line 4:20:  'setReadMore' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T18:47:13.789Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:47:13.790Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:48:22.307Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:48:22.514Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:48:22.514Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 4:20:  'setReadMore' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T18:48:22.514Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:48:22.515Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:49:05.983Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:49:06.158Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:49:06.158Z] : [react-plugin]: [eslint] 
+src\Tour.js
+  Line 4:20:  'setReadMore' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T18:49:06.158Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:49:06.158Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:50:40.988Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:50:41.211Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T18:50:41.212Z] : [react-plugin]: 
+[info] [2023-02-18T18:50:41.212Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T18:50:41.212Z] : [react-plugin]: 
+[info] [2023-02-18T18:50:41.212Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T18:50:41.213Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T18:50:41.213Z] : [react-plugin]: 
+[info] [2023-02-18T18:50:41.213Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T18:50:41.213Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T18:50:41.214Z] : [react-plugin]: 
+[info] [2023-02-18T18:54:08.611Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:54:08.835Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:54:08.835Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 12:9:   'removeTour' is assigned a value but never used  no-unused-vars
+  Line 13:11:  'newTours' is assigned a value but never used    no-unused-vars
+[info] [2023-02-18T18:54:08.836Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:54:08.836Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:54:17.719Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:54:17.873Z] : [react-plugin]: Compiled with warnings.
+
+[info] [2023-02-18T18:54:17.873Z] : [react-plugin]: [eslint] 
+src\App.js
+  Line 12:9:  'removeTour' is assigned a value but never used  no-unused-vars
+[info] [2023-02-18T18:54:17.874Z] : [react-plugin]: 
+Search for the keywords to learn more about each warning.
+[info] [2023-02-18T18:54:17.874Z] : [react-plugin]: To ignore, add // eslint-disable-next-line to the line before.
+
+[info] [2023-02-18T18:54:38.961Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:54:39.116Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T18:54:39.116Z] : [react-plugin]: 
+[info] [2023-02-18T18:54:39.117Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T18:54:39.117Z] : [react-plugin]: 
+[info] [2023-02-18T18:54:39.117Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T18:54:39.117Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T18:54:39.117Z] : [react-plugin]: 
+[info] [2023-02-18T18:54:39.117Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T18:54:39.118Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T18:54:39.118Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:08.163Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:55:08.336Z] : [react-plugin]: Failed to compile.
+
+[info] [2023-02-18T18:55:08.336Z] : [react-plugin]: [eslint] 
+src\Tours.js
+  Line 12:60:  'removeTour' is not defined  no-undef
+
+Search for the keywords to learn more about each error.
+[info] [2023-02-18T18:55:19.243Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:55:19.399Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T18:55:19.399Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:19.399Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T18:55:19.400Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:19.400Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T18:55:19.400Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T18:55:19.400Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:19.400Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T18:55:19.401Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T18:55:19.401Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:43.472Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:55:43.631Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T18:55:43.632Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:43.632Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T18:55:43.632Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:43.632Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T18:55:43.632Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T18:55:43.632Z] : [react-plugin]: 
+[info] [2023-02-18T18:55:43.633Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T18:55:43.633Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T18:55:43.633Z] : [react-plugin]: 
+[info] [2023-02-18T18:56:21.627Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:56:21.799Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T18:56:21.800Z] : [react-plugin]: 
+[info] [2023-02-18T18:56:21.800Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T18:56:21.800Z] : [react-plugin]: 
+[info] [2023-02-18T18:56:21.800Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T18:56:21.800Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T18:56:21.801Z] : [react-plugin]: 
+[info] [2023-02-18T18:56:21.801Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T18:56:21.801Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T18:56:21.801Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:16.615Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:59:16.837Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T18:59:16.837Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:16.837Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T18:59:16.838Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:16.838Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T18:59:16.838Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T18:59:16.838Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:16.838Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T18:59:16.839Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T18:59:16.839Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:45.267Z] : [react-plugin]: Compiling...
+[info] [2023-02-18T18:59:45.425Z] : [react-plugin]: Compiled successfully!
+[info] [2023-02-18T18:59:45.425Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:45.425Z] : [react-plugin]: You can now view react-app in the browser.
+[info] [2023-02-18T18:59:45.425Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:45.426Z] : [react-plugin]:   Local:            http://localhost:3000/app/
+[info] [2023-02-18T18:59:45.426Z] : [react-plugin]:   On Your Network:  http://192.168.254.105:3000/app/
+[info] [2023-02-18T18:59:45.426Z] : [react-plugin]: 
+[info] [2023-02-18T18:59:45.426Z] : [react-plugin]: Note that the development build is not optimized.
+[info] [2023-02-18T18:59:45.426Z] : [react-plugin]: To create a production build, use npm run build.
+[info] [2023-02-18T18:59:45.427Z] : [react-plugin]: 
+[info] [2023-02-18T19:00:15.579Z] : Shutting down server
+[info] [2023-02-18T19:00:15.590Z] : 
+[info] [2023-02-18T19:00:15.592Z] : √ Shutdown complete
+[debug] [2023-02-18T19:00:15.593Z] : NO ERRORS REGISTERED
+[debug] [2023-02-18T19:00:15.594Z] : EXEC ENDED with event: serve, message: success
+[debug] [2023-02-18T19:00:15.594Z] : TOTAL DURATION OF COMMAND EXEC : 3679968
+[debug] [2023-02-18T19:00:15.617Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-18T19:00:17.136Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 19:00:17 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=1a88bd50-6cae-4e90-b894-9544a90de9e9;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=1a88bd50-6cae-4e90-b894-9544a90de9e9;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=580BB1FD8A93E040EEA12D864FFDFAF4; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-18T19:00:17.140Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-18T19:00:17.145Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
+[debug] [2023-02-18T19:00:20.509Z] : 
+[debug] [2023-02-18T19:00:20.510Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T19:00:20.510Z] : Command:      C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\zcatalyst-cli\lib\bin\catalyst.js deploy
+[debug] [2023-02-18T19:00:20.511Z] : CLI Version:  1.13.3
+[debug] [2023-02-18T19:00:20.511Z] : Platform:     win32
+[debug] [2023-02-18T19:00:20.511Z] : Node Version: v18.12.1
+[debug] [2023-02-18T19:00:20.512Z] : Time:         Sun Feb 19 2023 03:00:20 GMT+0800 (Singapore Standard Time)
+[debug] [2023-02-18T19:00:20.513Z] : ----------------------------------------------------------------------
+[debug] [2023-02-18T19:00:20.513Z] : 
+[debug] [2023-02-18T19:00:21.120Z] : > authorizing via signed-in user option
+[debug] [2023-02-18T19:00:21.121Z] : > command requires scopes: ["ZohoCatalyst.projects.ALL","ZohoCatalyst.functions.ALL","ZohoCatalyst.webapp.ALL"]
+[debug] [2023-02-18T19:00:21.132Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093043 
+
+[debug] [2023-02-18T19:00:21.778Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 19:00:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=955419b6-b36c-468a-ad8a-df40f2f3bf2c;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=955419b6-b36c-468a-ad8a-df40f2f3bf2c;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T19:00:21.787Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093043/environment 
+
+[debug] [2023-02-18T19:00:22.335Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 19:00:22 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=d218937d-403b-44cd-8993-6d678d55eda3;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=d218937d-403b-44cd-8993-6d678d55eda3;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T19:00:22.358Z] : >>>> HTTP REQUEST : GET https://api.catalyst.zoho.com/baas/v1/project/12143000000093043/function 
+Query params: {"type":"basicio,event,cron,applogic,integration"}
+
+[debug] [2023-02-18T19:00:22.909Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 19:00:23 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=ba2a1b22f2a5e14b0d2647f7e38884fc; Path=/","ZD_CSRF_TOKEN=48dcd07c-aad7-49d2-b901-c4f220fe8295;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=48dcd07c-aad7-49d2-b901-c4f220fe8295;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[debug] [2023-02-18T19:00:22.912Z] : unknown eol undefined hence skipping check
+[debug] [2023-02-18T19:00:23.101Z] : >>>> HTTP REQUEST : PUT https://api.catalyst.zoho.com/baas/v1/project/12143000000093043/server/upsert 
+
+[debug] [2023-02-18T19:00:26.152Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 19:00:26 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=47633157-187d-4bcb-9eac-89f3be5621a1;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=47633157-187d-4bcb-9eac-89f3be5621a1;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T19:00:26.261Z] : i Plugin : "zcatalyst-cli-plugin-react" is used for client deploy
+[info] [2023-02-18T19:00:26.261Z] : i Building Application...
+[info] [2023-02-18T19:00:28.290Z] : [react-plugin]: Creating an optimized production build...
+[info] [2023-02-18T19:00:34.840Z] : [react-plugin]: Compiled successfully.
+
+[info] [2023-02-18T19:00:34.840Z] : [react-plugin]: File sizes after gzip:
+
+[info] [2023-02-18T19:00:34.852Z] : [react-plugin]:   49.32 kB  build\static\js\main.4d257f5a.js
+[info] [2023-02-18T19:00:34.852Z] : [react-plugin]:   1.29 kB   build\static\css\main.566bd010.css
+[info] [2023-02-18T19:00:34.853Z] : [react-plugin]:  
+[debug] [2023-02-18T19:00:35.056Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/project/12143000000093043/webapp 
+
+[debug] [2023-02-18T19:00:36.615Z] : <<<< HTTP RESPONSE : 200
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 19:00:37 GMT","content-type":"application/vnd.catalyst.v2+json","transfer-encoding":"chunked","connection":"close","set-cookie":["46512fd555=63dd9cf89a6678b816d9580ec827ee61; Path=/","ZD_CSRF_TOKEN=7192c333-3212-49b2-be8f-6bfa51230be4;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=7192c333-3212-49b2-be8f-6bfa51230be4;path=/;SameSite=Strict;Secure;priority=high"],"x-content-type-options":"nosniff","x-xss-protection":"1","pragma":"no-cache","cache-control":"private,no-cache,no-store,max-age=0,must-revalidate","expires":"Thu, 01 Jan 1970 00:00:00 GMT","x-frame-options":"DENY","strict-transport-security":"max-age=63072000"}
+
+[info] [2023-02-18T19:00:36.616Z] : 
+[info] [2023-02-18T19:00:36.616Z] : i functions(tours_function): URL => https://tours-771945458.development.catalystserverless.com/server/tours_function/
+[info] [2023-02-18T19:00:36.617Z] : √ functions(tours_function): deploy successful
+[info] [2023-02-18T19:00:36.617Z] : 
+[info] [2023-02-18T19:00:36.617Z] : √ client: deploy successful
+[info] [2023-02-18T19:00:36.618Z] : i client: URL => https://tours-771945458.development.catalystserverless.com/app/index.html
+[info] [2023-02-18T19:00:36.619Z] : 
+[info] [2023-02-18T19:00:36.620Z] : √ Catalyst deploy complete!
+[debug] [2023-02-18T19:00:36.620Z] : NO ERRORS REGISTERED
+[debug] [2023-02-18T19:00:36.621Z] : EXEC ENDED with event: deploy, message: success
+[debug] [2023-02-18T19:00:36.621Z] : TOTAL DURATION OF COMMAND EXEC : 15516
+[debug] [2023-02-18T19:00:36.636Z] : >>>> HTTP REQUEST : POST https://api.catalyst.zoho.com/baas/v1/cli/logs 
+<request body omitted>
+
+[debug] [2023-02-18T19:00:38.268Z] : <<<< HTTP RESPONSE : 400
+Response Headers: {"server":"ZGS","date":"Sat, 18 Feb 2023 19:00:38 GMT","content-type":"application/json;charset=ISO-8859-1","content-length":"147","connection":"close","set-cookie":["46512fd555=04d9a2d1e2e86744f9516a3e9f805f56; Path=/","ZD_CSRF_TOKEN=4509befe-40b8-41b5-b731-27e9159bc41e;path=/;SameSite=None;Secure;priority=high","_zcsr_tmp=4509befe-40b8-41b5-b731-27e9159bc41e;path=/;SameSite=Strict;Secure;priority=high","JSESSIONID=D97F19A24DE5DB5EC698614B6AF803A8; Path=/; Secure; HttpOnly"],"x-content-type-options":"nosniff","x-xss-protection":"1","x-frame-options":"DENY"}
+
+[debug] [2023-02-18T19:00:38.269Z] : Response Body : {"status":"failure","data":{"error_code":"INPUT_SIZE_MORE_THAN_ALLOWED","message":"Please check if the size of the input is in the correct range"}}
+
+[debug] [2023-02-18T19:00:38.270Z] : Unable to send debug log to server: HTTP Error: 400, Please check if the size of the input is in the correct range
